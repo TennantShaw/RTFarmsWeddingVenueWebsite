@@ -59,7 +59,7 @@ table {
 body {
 	background: #F5F5DC;
 	color: #888;
-	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 16px/22px "Cutive", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -76,8 +76,7 @@ body {
 	box-sizing: border-box;
 }
 
-.contain,
-.grid {
+.contain {
 	margin: 0 auto;
 	width: 960px;
 }
@@ -85,27 +84,7 @@ body {
 .container {
 	padding-left: 30px;
 	padding-right: 30px;
-}
-
-.col-1-3 {
-	width: 33.33%;
-}
-
-.col-2-3 {
-	width: 66.66%;
-}
-
-.col-1-3,
-.col-2-3 {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.grid,
-.col-1-3,
-.col-2-3 {
-	padding-left: 15px;
-	padding-right: 15px;
+	position: relative;
 }
 
 /*
@@ -245,20 +224,50 @@ p a {
 ====================
 */
 
-.about-main {
+.home-main {
 	color: #708090;
 	line-height: 44px;
 	padding: 22px 80px 66px 80px;
 	text-align: center;
 }
 
-.about-main h2 {
+.home-main h2 {
 	font-size: 36px;
 }
 
-.about-main p {
+.home-main p {
 	font-size: 24px;
 	font-weight: 100;
+}
+
+.packages-home a {
+	color: #708090;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.local-home a {
+	color: #708090;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.contactus-home a {
+	color: #708090;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.centeredInImage {
+	position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 /*
@@ -322,12 +331,13 @@ p a {
 
 .nav {
 	text-align: right;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .nav li {
 	display: inline-block;
 	margin: 0 10px;
+	margin-top: 8px;
 	vertical-align: top;
 }
 
@@ -341,11 +351,43 @@ p a {
 ====================
 */
 
-.teaser img {
+.packages-home img {
 	border-radius: 5px;
 	display: block;
+	margin: auto;
 	margin-bottom: 22px;
 	max-width: 100%;
+	opacity: 0.9;
+}
+
+.packages-home img:hover {
+	opacity: 0.3;
+}
+
+.local-home img {
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+	margin-bottom: 22px;
+	max-width: 100%;
+	opacity: 0.9;
+}
+
+.local-home img:hover {
+	opacity: 0.3;
+}
+
+.contactus-home img {
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+	margin-bottom: 22px;
+	max-width: 100%;
+	opacity: 0.9;
+}
+
+.contactus-home img:hover {
+	opacity: 0.3;
 }
 
 
@@ -362,5 +404,6 @@ p a {
 	width: 600px;
 	padding-left: 30px;
 	padding-right: 30px;
+	margin-bottom: 30px;
 }
 
