@@ -154,7 +154,7 @@ h1, h3, h4, h5, p {
 	margin-bottom: 22px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
 	color: #fff;
 }
 
@@ -170,6 +170,7 @@ h2 {
 
 h3 {
 	font-size: 21px;
+	font-weight: 300;
 }
 
 h4 {
@@ -245,7 +246,7 @@ p a {
 */
 
 .about-main {
-	color: #fff;
+	color: #708090;
 	line-height: 44px;
 	padding: 22px 80px 66px 80px;
 	text-align: center;
@@ -279,7 +280,7 @@ p a {
 
 .primary-nav {
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 100;
 	letter-spacing: .5px;
 	text-transform: uppercase;
 }
@@ -348,4 +349,18 @@ p a {
 }
 
 
+/*
+====================
+	Separator
+====================
+*/
+
+.separator {
+	border-bottom: solid;
+	border-width: 6px;
+	margin: 0 auto;
+	width: 600px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
 
