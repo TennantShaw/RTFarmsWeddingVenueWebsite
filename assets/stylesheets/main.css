@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+====================
+	Custom styles
+====================
+*/
+
+body {
+	background: #F5F5DC;
+	color: #888;
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+====================
+	Grid
+====================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contain,
+.grid {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*
+====================
+	Rows
+====================
+*/
+
+.row {
+	background: url(nightSkyResized.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	border-bottom: outset;
+	border-width: 5px;
+}
+
+/*
+====================
+	Clearfix
+====================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/*
+====================
+	Typography
+====================
+*/
+
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+}
+
+h1, h2, h3, h4 {
+	color: #fff;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+
+cite, em {
+	font-style: italic;
+}
+
+/*
+====================
+	Links
+====================
+*/
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #a9a9a9;
+}
+
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+
+/*
+====================
+	Buttons
+====================
+*/
+/*
+.btn {
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	letter-spacing: .5px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.btn-alt {
+	border: 1px solid #fff;
+	padding: 10px 30px;
+}
+
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
+}
+*/
+
+/*
+====================
+	Home
+====================
+*/
+
+.about-main {
+	color: #fff;
+	line-height: 44px;
+	padding: 22px 80px 66px 80px;
+	text-align: center;
+}
+
+.about-main h2 {
+	font-size: 36px;
+}
+
+.about-main p {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+/*
+====================
+	Primary header
+====================
+*/
+
+.logo {
+	width: 100%;
+	font-size: 48px;
+	font-weight: 100;
+	letter-spacing: .5px;
+	line-height: 44px;
+	padding: 100px 0 380px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.primary-nav {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+.primary-header a:hover {
+	color: 708090;
+}
+
+/*
+====================
+	Primary footer
+====================
+*/
+
+.primary-footer small {
+	float: left;
+	font-weight: 400;
+}
+
+.primary-footer {
+	font-size: 14px;
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
+
+.primary-footer a {
+	color: #708090;
+}
+
+.primary-footer a:hover {
+	color: #A9A9A9;
+}
+
+/*
+====================
+	Navigation
+====================
+*/
+
+.nav {
+	text-align: right;
+	font-size: 20px;
+}
+
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+.nav li:last-child {
+	margin-right: 20px;
+}
+
+/*
+====================
+	Images
+====================
+*/
+
+.teaser img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	max-width: 100%;
+}
+
+
+
