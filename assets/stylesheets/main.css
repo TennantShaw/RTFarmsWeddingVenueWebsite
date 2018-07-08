@@ -102,6 +102,10 @@ body {
 	border-width: 5px;
 }
 
+.rowTwo {
+	background-color: #708090;
+}
+
 /*
 ====================
 	Clearfix
@@ -316,7 +320,7 @@ p a {
 }
 
 .primary-footer a {
-	color: #708090;
+	color: #F5F5DC;
 }
 
 .primary-footer a:hover {
