@@ -57,9 +57,13 @@ table {
 */
 
 body {
-	background: #F5F5DC;
+	background: #708090;
 	color: #888;
-	font: 300 16px/22px "Cutive", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 16px/22px "Assistant", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-section {
+	background: #fff;
 }
 
 /*
@@ -76,7 +80,8 @@ body {
 	box-sizing: border-box;
 }
 
-.contain {
+.container,
+.grid {
 	margin: 0 auto;
 	width: 960px;
 }
@@ -84,7 +89,27 @@ body {
 .container {
 	padding-left: 30px;
 	padding-right: 30px;
-	position: relative;
+}
+
+.col-1-4 {
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.col-1-3 {
+	width: 50%;
+}
+
+.col-2-3 {
+	width: 50%;
+}
+
+.col-1-3,
+.col-2-3,
+.col-1-4 {
+	display: inline-block;
+	vertical-align: top;
 }
 
 /*
@@ -94,12 +119,9 @@ body {
 */
 
 .row {
-	background: url(nightSkyResized.png);
+	background: url(homeBackgroundImage.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-
-	border-bottom: outset;
-	border-width: 5px;
 }
 
 .rowTwo {
@@ -228,50 +250,36 @@ p a {
 ====================
 */
 
-.home-main {
+.about {
 	color: #708090;
 	line-height: 44px;
-	padding: 22px 80px 66px 80px;
+	padding: 22px 80px 22px 80px;
 	text-align: center;
 }
 
-.home-main h2 {
+.about h2 {
 	font-size: 36px;
 }
 
-.home-main p {
+.about p {
 	font-size: 24px;
 	font-weight: 100;
 }
 
-.packages-home a {
+.testamonials {
 	color: #708090;
+	line-height: 44px;
+	padding: 22px 80px 22px 80px;
 	text-align: center;
-	font-size: 48px;
-	font-weight: 300;
-	text-transform: uppercase;
 }
 
-.local-home a {
-	color: #708090;
-	text-align: center;
-	font-size: 48px;
-	font-weight: 300;
+.testamonials h2 {
+	font-size: 36px;
 }
 
-.contactus-home a {
-	color: #708090;
-	text-align: center;
-	font-size: 48px;
-	font-weight: 300;
-}
-
-.centeredInImage {
-	position: absolute;
-    left: 25%;
-    top: 50%;
-    width: 50%;
-    text-align: center;
+.testamonials p {
+	font-size: 24px;
+	font-weight: 100;
 }
 
 /*
@@ -320,7 +328,7 @@ p a {
 }
 
 .primary-footer a {
-	color: #F5F5DC;
+	color: #fff;
 }
 
 .primary-footer a:hover {
@@ -355,7 +363,7 @@ p a {
 ====================
 */
 
-.packages-home img {
+.teaserImage img {
 	border-radius: 5px;
 	display: block;
 	margin: auto;
@@ -364,50 +372,12 @@ p a {
 	opacity: 0.9;
 }
 
-.packages-home img:hover {
-	opacity: 0.3;
-}
-
-.local-home img {
-	border-radius: 5px;
+.col-1-3 img {
+	border-radius: 50%;
 	display: block;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 22px;
-	max-width: 100%;
-	opacity: 0.9;
 }
 
-.local-home img:hover {
-	opacity: 0.3;
-}
-
-.contactus-home img {
-	border-radius: 5px;
-	display: block;
-	margin: auto;
-	margin-bottom: 22px;
-	max-width: 100%;
-	opacity: 0.9;
-}
-
-.contactus-home img:hover {
-	opacity: 0.3;
-}
-
-
-/*
-====================
-	Separator
-====================
-*/
-
-.separator {
-	border-bottom: solid;
-	border-width: 6px;
-	margin: 0 auto;
-	width: 600px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-bottom: 30px;
-}
 
