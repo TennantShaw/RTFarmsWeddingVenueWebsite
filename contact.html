@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    #map {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+    }
+    </style>
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700" rel="stylesheet">
@@ -17,6 +25,7 @@
             --><li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+
     <header class="primary-header container group">
         <h1 class="logo">
             <a href="index.html">RT Farm and Apiary <br> Wedding Venue</a>
@@ -24,7 +33,9 @@
     </header>
     </div>
 
-
+    <div class="main-section">
+        <div id="map"></div>
+    </div>
 
     <footer class="primary-footer container group">
         <small>&copy; Tennant Shaw</small>
@@ -36,5 +47,21 @@
             --><li><a href="contact.html">Contact Us</a></li>
         </nav>
     </footer>
+
+    <script>
+    // Initialize and add the map
+    function initMap() {
+    // The location of Uluru
+    var uluru = {lat: 35.280, lng: -82.545};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 15, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map, title: 'Rex and Tim Farm and Apiary Wedding Venue'});
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDodf3WL4cpXHgjgUaGa8x-je2Y0g3ufwc&callback=initMap">
+    </script>
 </body>
 </html>
